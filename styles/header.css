@@ -1,0 +1,176 @@
+.header {
+  height: 65px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(210, 199, 199);
+  z-index: 10;
+}
+/*style details*/
+.left-section {
+  
+  display: flex;
+  width: 250px;
+  flex-direction: row;
+  align-items: center;
+}
+.hamburger {
+  width: 22px;
+  margin-left: 27px; 
+  transition: 0.15s;
+}
+.hamburger:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.yt {
+  background-color: white;
+  border-style: none;
+  margin-left: 20px;
+  transition: opacity 0.15s;
+}
+.yt:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.ytlogo {
+  width: 94px;
+  height: 22px;
+  margin-left: 15px;
+  font-weight: 600;
+  background-color: white;
+  margin-left: 0;
+}
+.middle-section {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  margin-left: 50px;
+  margin-right:100px;
+  max-width: 500px;
+  
+}
+.search-bar {
+  flex: 1;
+  max-width: 400px;
+  font-size: 16px;
+  border:1px solid rgb(206, 199, 199);
+  border-start-start-radius: 25px;
+  border-end-start-radius: 25px;
+  width: 0;
+  padding-left: 20px;
+}
+.search-bar::placeholder {
+  font-size: 16px;
+}
+.right-section {
+  display: flex;
+  max-width: 250px;
+  flex-direction: row;
+  align-items: center;
+}
+.search {
+  width: 27px;
+  padding: 5px;
+  height: 27px;
+  border: none;
+}
+.searchbutton {
+  padding-top: 3px;
+  border-radius: 0px;
+  height: 44px;
+  border: 1px solid rgb(214, 212, 212);
+  width: 65px;
+  border-start-end-radius: 25px;
+  border-end-end-radius: 25px;
+  transition: opacity 0.15s;
+  margin-left: -1px;
+}
+.voice {
+  width: 17px;
+  height: 20px;
+}
+.voicebutton {
+  padding-top: 4px;
+  border-radius: 0px;
+  height: 44px;
+  border: 0px solid rgb(206, 199, 199);
+  width: 44px;
+  border-radius: 30px;
+  margin-left: 17px;
+  transition: opacity 0.15s;
+}
+
+.search-bar {
+  width: 180px;
+  height: 24px;
+}
+.createbutton,
+.profilebutton{
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  background-color: rgb(255, 253, 253);
+  margin-left: 15px;
+  border-radius: 50%;
+  transition: opacity 0.15s, background-color 0.15s;
+}
+.profilebutton {
+  margin-right: 10px;
+}
+.create,
+.notification {
+  width: 28px;
+  height: 28px;
+  margin-top: 5px;
+  position: relative ;
+}
+
+.profile {
+  width: 29px;
+  height: 29px;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
+.profilebutton:hover,
+.notificationbutton:hover,
+.createbutton:hover,
+.searchbutton:hover,
+.voicebutton:hover {
+  opacity: 0.7;
+  background-color: rgb(242, 239, 239);
+  cursor: pointer;
+}
+.notificationbutton {
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  background-color: rgb(255, 253, 253);
+  margin-left: 15px;
+  border-radius: 50%;
+  transition: opacity 0.15s, background-color 0.15s;
+  position: relative;
+  .notification-count {
+    position: absolute;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    font-size: 12px;
+    right: -1px;
+    top: 5px;
+  }
+}
+
